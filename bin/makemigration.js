@@ -95,7 +95,7 @@ if (fs.existsSync(path.join(migrationsDir, '_current.json')))
 
 // save current state
 let date = new Date();
-currentState.revision = [date.getUTCFullYear(), (date.getUTCMonth() + 1), (date.getUTCDate()), (date.getUTCHours()), (date.getUTCMinutes()), (date.getUTCSeconds())].join('');
+currentState.revision = [_.padStart(date.getUTCFullYear(), 4, '0'), _.padStart((date.getUTCMonth() + 1), 2, '0'), _.padStart(date.getUTCDate(), 2, '0'), _.padStart(date.getUTCHours(), 2, '0'), _.padStart(date.getUTCMinutes(), 2, '0'), _.padStart(date.getUTCSeconds(), 2, '0')].join('');
 fs.writeFileSync(path.join(migrationsDir, '_current.json'), JSON.stringify(currentState, null, 4) );
 fs.writeFileSync(path.join(migrationsDir, '_current.json.'+currentState.revision), JSON.stringify(currentState, null, 4) );
 
