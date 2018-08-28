@@ -97,6 +97,7 @@ if (fs.existsSync(path.join(migrationsDir, '_current.json')))
 let date = new Date();
 currentState.revision = [date.getUTCFullYear(), (date.getUTCMonth() + 1), (date.getUTCDate()), (date.getUTCHours()), (date.getUTCMinutes()), (date.getUTCSeconds())].join('');
 fs.writeFileSync(path.join(migrationsDir, '_current.json'), JSON.stringify(currentState, null, 4) );
+fs.writeFileSync(path.join(migrationsDir, '_current.json.'+currentState.revision), JSON.stringify(currentState, null, 4) );
 
 // write migration to file
 let info = migrate.writeMigration(currentState.revision,
