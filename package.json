@@ -32,5 +32,8 @@
     "lodash": "^4.17.4",
     "object-hash": "^1.1.8",
     "sequelize": "^4.3.2"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
   }
 }
