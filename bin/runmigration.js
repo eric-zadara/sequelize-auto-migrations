@@ -76,7 +76,7 @@ Async.eachSeries(migrationFiles,
   function (file, cb) {
     console.log('Execute migration from file: ' + file)
     migrate.executeMigration(queryInterface, path.join(migrationsDir, file), fromPos, (err) => {
-      if (stop) { return cb('Stopped') }
+      if (stop) { return cb('Stopped') } // eslint-disable-line
 
       cb(err)
     })
