@@ -24,14 +24,16 @@
     "url": "https://github.com/flexxnn/sequelize-auto-migrations/issues"
   },
   "homepage": "https://github.com/flexxnn/sequelize-auto-migrations#readme",
-  "dependencies": {
+  "peerDependencies": {
+    "sequelize": "git+https://github.com/eric-zadara/sequelize.git"
+  },
+    "dependencies": {
     "async": "^2.5.0",
     "command-line-args": "^4.0.6",
     "deep-diff": "^0.3.8",
     "js-beautify": "^1.6.14",
     "lodash": "^4.17.4",
-    "object-hash": "^1.1.8",
-    "sequelize": "git+https://github.com/eric-zadara/sequelize.git"
+    "object-hash": "^1.1.8"
   },
   "devDependencies": {
     "husky": "^1.1.3",
