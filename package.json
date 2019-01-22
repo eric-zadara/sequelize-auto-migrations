@@ -27,7 +27,7 @@
   "peerDependencies": {
     "sequelize": "git+https://github.com/eric-zadara/sequelize.git"
   },
-    "dependencies": {
+  "dependencies": {
     "async": "^2.5.0",
     "command-line-args": "^4.0.6",
     "deep-diff": "^0.3.8",
