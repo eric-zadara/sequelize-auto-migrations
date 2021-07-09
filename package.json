@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/flexxnn/sequelize-auto-migrations#readme",
   "peerDependencies": {
-    "sequelize": "git+https://github.com/eric-zadara/sequelize.git"
+    "sequelize": "git+https://github.com/eric-zadara/sequelize.git#4.42.0-modified"
   },
   "dependencies": {
     "async": "^2.5.0",
