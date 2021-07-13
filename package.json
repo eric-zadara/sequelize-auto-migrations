@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/eric-zadara/sequelize-auto-migrations#readme",
   "peerDependencies": {
-    "sequelize": "^6.6.5",
+    "sequelize": "^6.6.2",
     "sequelize-typescript": "^2.1.0"
   },
   "dependencies": {
